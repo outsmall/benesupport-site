@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeneSupport – Empowering Everyday Movement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>BeneSupport</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="register.html">Warranty</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <select id="language-selector">
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="zh">中文</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Empowering Everyday Movement</h2>
+      <p>Support. Care. Comfort. – For the ones you love.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BeneSupport. All rights reserved.</p>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms</a>
+  </footer>
+
+  <script>
+    document.getElementById('language-selector').addEventListener('change', function(e) {
+      const lang = e.target.value;
+      window.location.href = lang + '/index.html';
+    });
+  </script>
+</body>
+</html>
