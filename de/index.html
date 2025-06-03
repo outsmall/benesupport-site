@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeneSupport – Bewegung mit Vertrauen stärken</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>BeneSupport</h1>
+    <nav>
+      <ul>
+        <li><a href="/de/index.html">Startseite</a></li>
+        <li><a href="#">Produkte</a></li>
+        <li><a href="/de/register.html">Garantie</a></li>
+        <li><a href="#">Über Uns</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li>
+<select id="language-selector">
+  <option value="en">EN</option>
+  <option value="de">DE</option>
+</select>
+<script>
+  document.getElementById('language-selector').addEventListener('change', function(e) {
+    const lang = e.target.value;
+    window.location.href = '/' + lang + '/index.html';
+  });
+</script>
+</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <h2>Bewegung mit Vertrauen stärken</h2>
+      <p>Unterstützung. Fürsorge. Komfort – Für die Menschen, die wir lieben.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 BeneSupport</p>
+  </footer>
+  
+</body>
+</html>

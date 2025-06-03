@@ -4,25 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BeneSupport – Empowering Everyday Movement</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <header>
     <h1>BeneSupport</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="register.html">Warranty</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/register">Warranty</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
         <li>
-          <select id="language-selector">
-            <option value="en">EN</option>
-            <option value="de">DE</option>
-            <option value="zh">中文</option>
-          </select>
-        </li>
+<select id="language-selector">
+  <option value="en">EN</option>
+  <option value="de">DE</option>
+</select>
+<script>
+  document.getElementById('language-selector').addEventListener('change', function(e) {
+    const lang = e.target.value;
+    window.location.href = '/' + lang + '/index.html';
+  });
+</script>
+</li>
       </ul>
     </nav>
   </header>
@@ -32,18 +37,33 @@
       <h2>Empowering Everyday Movement</h2>
       <p>Support. Care. Comfort. – For the ones you love.</p>
     </section>
+
+    <section id="register">
+      <h3>Register for Extended Warranty</h3>
+      <form action="https://formspree.io/f/your-code" method="POST">
+        <label>Product Serial Number*<br><input type="text" name="serial" required></label><br>
+        <label>Date of Purchase<br><input type="date" name="purchase_date"></label><br>
+        <label>Full Name*<br><input type="text" name="name" required></label><br>
+        <label>Email Address*<br><input type="email" name="email" required></label><br>
+        <label>Country<br><input type="text" name="country"></label><br>
+        <label>Product Type<br>
+          <select name="product_type">
+            <option>Knee Brace</option>
+            <option>Back Support</option>
+            <option>Other</option>
+          </select>
+        </label><br>
+        <label>Purchase Channel<br><input type="text" name="channel"></label><br>
+        <label><input type="checkbox" name="consent" required> I agree to the Privacy Policy</label><br>
+        <button type="submit">Register Now</button>
+      </form>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 BeneSupport. All rights reserved.</p>
-    <a href="#">Privacy Policy</a> | <a href="#">Terms</a>
+    <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms</a>
   </footer>
-
-  <script>
-    document.getElementById('language-selector').addEventListener('change', function(e) {
-      const lang = e.target.value;
-      window.location.href = lang + '/index.html';
-    });
-  </script>
+  
 </body>
 </html>
