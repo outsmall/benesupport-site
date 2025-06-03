@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BeneSupport – Bewegung mit Vertrauen stärken</title>
   <link rel="stylesheet" href="/style.css">
-  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
   <header>
@@ -22,12 +22,6 @@
   <option value="en">EN</option>
   <option value="de">DE</option>
 </select>
-<script>
-  document.getElementById('language-selector').addEventListener('change', function(e) {
-    const lang = e.target.value;
-    window.location.href = '/' + lang + '/index.html';
-  });
-</script>
 </li>
       </ul>
     </nav>
@@ -36,11 +30,23 @@
     <section id="hero">
       <h2>Bewegung mit Vertrauen stärken</h2>
       <p>Unterstützung. Fürsorge. Komfort – Für die Menschen, die wir lieben.</p>
+      <a href="/de/register.html"><button>Garantie registrieren</button></a>
     </section>
   </main>
   <footer>
-    <p>&copy; 2025 BeneSupport</p>
+    <p>&copy; 2025 BeneSupport. Alle Rechte vorbehalten.</p>
   </footer>
   
+<script>
+  document.getElementById('language-selector').addEventListener('change', function(e) {
+    const lang = e.target.value;
+    const path = window.location.pathname;
+    const isGerman = path.startsWith('/de/');
+    const corePath = isGerman ? path.replace(/^\/de\//, '') : path.replace(/^\//, '');
+    const newPath = lang === 'de' ? '/de/' + corePath : '/' + corePath;
+    window.location.href = newPath;
+  });
+</script>
+
 </body>
 </html>
