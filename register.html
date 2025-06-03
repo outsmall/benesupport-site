@@ -3,21 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register Warranty - BeneSupport</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Warranty Registration - BeneSupport</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/x-icon" href="/favicon-green.ico">
 </head>
 <body>
+  <header>
+    <h1>BeneSupport</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/register">Warranty</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li>
+<select id="language-selector">
+  <option value="en">EN</option>
+  <option value="de">DE</option>
+</select>
+</li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
     <h1>Register for Extended Warranty</h1>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <label>Serial Number*<br><input type="text" name="serial" required></label><br>
-      <label>Full Name*<br><input type="text" name="name" required></label><br>
-      <label>Email*<br><input type="email" name="email" required></label><br>
-      <label>Country<br><input type="text" name="country"></label><br>
-      <label>Purchase Channel<br><input type="text" name="channel"></label><br>
-      <label><input type="checkbox" name="consent" required> I agree to the Privacy Policy</label><br>
-      <button type="submit">Register</button>
-    </form>
+    <a href="https://tally.so/r/31yQL1" target="_blank" rel="noopener">
+      <button type="button">Register via Secure Form</button>
+    </a>
   </main>
+  
+<script>
+  document.getElementById('language-selector').addEventListener('change', function(e) {
+    const lang = e.target.value;
+    const path = window.location.pathname;
+    const isGerman = path.startsWith('/de/');
+    const corePath = isGerman ? path.replace(/^\/de\//, '') : path.replace(/^\//, '');
+    const newPath = lang === 'de' ? '/de/' + corePath : '/' + corePath;
+    window.location.href = newPath;
+  });
+</script>
+
 </body>
 </html>
