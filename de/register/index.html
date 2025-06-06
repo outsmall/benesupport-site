@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Garantieverlängerung – BeneSupport</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>BeneSupport</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Produkte</a></li>
+        <li><a href="/de/register/">Garantie</a></li>
+        <li><a href="/about">Über Uns</a></li>
+        <li><a href="/contact">Kontakt</a></li>
+        <li>
+          <select id="language-selector">
+            <option value="en">EN</option>
+            <option value="de" selected>DE</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="register">
+      <h2>Registrierung für Garantieverlängerung</h2>
+      <a href="https://tally.so/r/31yQL1" target="_blank" style="padding: 12px 24px; background: #000; color: #fff; text-decoration: none; border-radius: 4px; font-weight: bold;">
+        Jetzt registrieren
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BeneSupport. Alle Rechte vorbehalten.</p>
+    <a href="/privacy">Datenschutz</a> | <a href="/terms">AGB</a>
+  </footer>
+
+  <script>
+    document.getElementById('language-selector').addEventListener('change', function(e) {
+      const lang = e.target.value;
+      if (lang === 'en') window.location.href = '/register';
+      else window.location.href = '/de/register';
+    });
+  </script>
+</body>
+</html>
