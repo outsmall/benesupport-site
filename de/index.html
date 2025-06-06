@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BeneSupport – Bewegung mit Vertrauen stärken</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Willkommen bei BeneSupport</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <header>
     <h1>BeneSupport</h1>
     <nav>
       <ul>
-        <li><a href="/de/index.html">Startseite</a></li>
-        <li><a href="#">Produkte</a></li>
-        <li><a href="/de/register.html">Garantie</a></li>
-        <li><a href="#">Über Uns</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li><a href="/de/">Startseite</a></li>
+        <li><a href="/products">Produkte</a></li>
+        <li><a href="/de/register">Garantie</a></li>
+        <li><a href="/about">Über Uns</a></li>
+        <li><a href="/contact">Kontakt</a></li>
         <li>
-<select id="language-selector">
-  <option value="en">EN</option>
-  <option value="de">DE</option>
-</select>
-</li>
+          <select id="language-selector">
+            <option value="en">EN</option>
+            <option value="de" selected>DE</option>
+          </select>
+        </li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <section id="hero">
+    <section>
       <h2>Bewegung mit Vertrauen stärken</h2>
-      <p>Unterstützung. Fürsorge. Komfort – Für die Menschen, die wir lieben.</p>
-      <a href="/de/register.html"><button>Garantie registrieren</button></a>
+      <p>Unterstützung. Fürsorge. Komfort – für die Menschen, die wir lieben.</p>
+      <a href="/de/register"><button>Garantie registrieren</button></a>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 BeneSupport. Alle Rechte vorbehalten.</p>
   </footer>
-  
-<script>
-  document.getElementById('language-selector').addEventListener('change', function(e) {
-    const lang = e.target.value;
-    const path = window.location.pathname;
-    const isGerman = path.startsWith('/de/');
-    const corePath = isGerman ? path.replace(/^\/de\//, '') : path.replace(/^\//, '');
-    const newPath = lang === 'de' ? '/de/' + corePath : '/' + corePath;
-    window.location.href = newPath;
-  });
-</script>
 
+  <script>
+    document.getElementById('language-selector').addEventListener('change', function(e) {
+      const lang = e.target.value;
+      window.location.href = lang === 'en' ? '/' : '/de/';
+    });
+  </script>
 </body>
 </html>
