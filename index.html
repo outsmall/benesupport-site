@@ -1,65 +1,67 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Welcome to BeneSupport</title>
-<link href="/favicon.ico" rel="icon"/>
-<link href="/style.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Welcome to BeneSupport</title>
+  <link href="/favicon.ico" rel="icon"/>
+  <link href="/style.css" rel="stylesheet"/>
 </head>
 <body>
-<header>
-<h1>BeneSupport</h1>
-<nav>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/products">Products</a></li>
-<li><a href="/register">Warranty</a></li>
-<li></li>
-<li><a href="/contact">Contact</a></li>
-<li>
-<select id="language-selector">
-<option selected="" value="en">EN</option>
-<option value="de">DE</option>
-</select>
-</li>
-</ul>
-</nav>
-</header>
-<main>
+  <header>
+    <h1>BeneSupport</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/register">Warranty</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li>
+          <select id="language-selector">
+            <option value="en" selected>EN</option>
+            <option value="de">DE</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
 <section id="hero" style="margin-top:0;padding:0;">
-<div style="position: relative; text-align: center; color: white;">
-<img alt="Hero Background" src="index background.png" style="width: 100%; height: auto; display: block; object-fit: cover; margin-bottom: -5px;"/>
-<div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
-                background-color: rgba(0,0,0,0.6); padding: 1em 2em; border-radius: 8px; width: 80%; max-width: 960px;">
-<blockquote style="font-size: 1.6em; font-style: italic; line-height: 1.4;">
-        “Support is not just a product. It’s a promise — to the people we love, to the lives we lead, and to the future we create.”<br/>
-
-</blockquote>
-</div>
-</div>
+  <div style="position: relative; text-align: center; color: white;">
+    <img src="index background.png" alt="Hero Background" style="width: 100%; height: auto; display: block; object-fit: cover; margin-bottom: -5px;">
+    <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+                background-color: rgba(0,0,0,0.6); padding: 1.5em 2em; border-radius: 8px; width: 85%; max-width: 960px;">
+      <blockquote style="font-size: 1.6em; font-style: italic; line-height: 1.4; margin: 0;">
+        “Support is not just a product. It’s a promise — to the people we love, to the lives we lead, and to the future we create.”
+      </blockquote>
+    </div>
+  </div>
 </section>
+
 <section id="brand-story" style="background-color: #fff; padding: 2em;">
-<h2>Brand story of BeneSupport</h2>
-<p><strong>Designed in Milan. Inspired by care. Built for people.</strong></p>
-<p>I founded BeneSupport because I saw something missing — not in the product market, but in how we treat the people we care about.</p>
-<p>As my parents aged, I noticed the small things: slower steps, subtle aches, moments they tried to hide. That’s when I realized — support should not feel medical. It should feel human.</p>
-<p>That’s why we design every product around real life: to provide strength without stiffness, structure without discomfort, and dignity without compromise.</p>
-<p>From Milan’s timeless design philosophy to the daily movements of the people we love — this is where technology meets empathy.</p>
-<p><strong>We don’t just make supports. We make comfort visible. We make trust wearable.</strong></p>
+  <h2>Brand story of BeneSupport</h2>
+  <p><strong>I love my mum and dad.</strong></p>
+  <p>Watching them grow older, I began to notice the small changes in how they moved – slower steps, occasional discomfort, moments of fatigue. It made me realize how much our bodies carry us, and how much we all deserve to feel supported – every single day.</p>
+  <p>That’s why I created BeneSupport – to empower everyday movement through modern materials and thoughtful design – with stronger support, lasting comfort, and trusted protection.</p>
+  <p>Living in Milan for many years, I’ve often visited the Sforza Castle Museum, where the ancient shields of knights inspired me to create modern shields for the body – supportive products that bring protection, comfort, and care.</p>
+  <p>Whether it’s your parents, your friends, or yourself – we’re here to offer gentle support and comfort where it’s needed most.</p>
+  <p><strong>Designed in Milan, Italy.</strong></p>
 </section>
 
-</main>
-<footer>
-<p>© 2025 BeneSupport. All rights reserved.</p>
- | <a href="/privacy">Privacy Policy</a></footer>
-<script>
+  </main>
+
+  <footer>
+    <p>© 2025 BeneSupport. All rights reserved.</p>
+    | <a href="/privacy">Privacy Policy</a>
+  </footer>
+
+  <script>
     document.getElementById('language-selector').addEventListener('change', function(e) {
       const lang = e.target.value;
       window.location.href = lang === 'de' ? '/de/' : '/';
     });
-</script>
+  </script>
 </body>
 </html>
