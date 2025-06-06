@@ -87,15 +87,20 @@
     </section>
   </main>
 
-  <footer style="text-align: center;">
+  <br>
+  <br>
+  <br>
+
+
+  
+ <footer style="text-align: center;">
   <p>© BeneSupport. All rights reserved. | <a href="/privacy">Privacy Policy</a></p>
 </footer>
 
   <script>
     document.getElementById('language-selector').addEventListener('change', function(e) {
       const lang = e.target.value;
-      if (lang === 'de') window.location.href = '/de/register.html';
-      else window.location.href = '/register.html';
+      window.location.href = lang === 'de' ? '/de/' : '/';
     });
   </script>
 </body>
