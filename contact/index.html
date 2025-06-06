@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – BeneSupport</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    body { margin: 0; }
+    header {
+      background-color: #003366;
+      padding: 1em;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1em;
+      align-items: center;
+    }
+    nav ul li a, nav ul li select {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BeneSupport</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Best Seller</a></li>
+        <li><a href="/register">Warranty</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li>
+          <select id="language-selector">
+            <option value="en" selected>EN</option>
+            <option value="de">DE</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact" style="padding: 3em;">
+      <h2>Contact BeneSupport</h2>
+      <p style="font-size: 1.05em; max-width: 680px;">
+        We're here to help. Whether you have questions about our products or need assistance, we're dedicated to supporting you.<br><br>
+        Please reach out to us at <strong><a href="mailto:service@benesupport.com">service@benesupport.com</a></strong>, and our team will get back to you as soon as possible.
+      </p>
+    </section>
+  </main>
+
+  <footer style="text-align: center; background-color: #003366; color: white; padding: 1em;">
+    <p>© BeneSupport. All rights reserved. | <a href="/privacy" style="color: #fff; text-decoration: underline;">Privacy Policy</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('language-selector').addEventListener('change', function(e) {
+      const lang = e.target.value;
+      if (lang === 'de') window.location.href = '/de/contact.html';
+      else window.location.href = '/contact/index.html';
+    });
+  </script>
+</body>
+</html>
