@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Warranty Registration - BeneSupport</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" type="image/x-icon" href="/favicon-green.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register – BeneSupport</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <header>
@@ -14,36 +15,39 @@
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/products">Products</a></li>
-        <li><a href="/register">Warranty</a></li>
+        <li><a href="/register.html">Warranty</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
         <li>
-<select id="language-selector">
-  <option value="en">EN</option>
-  <option value="de">DE</option>
-</select>
-</li>
+          <select id="language-selector">
+            <option value="en" selected>EN</option>
+            <option value="de">DE</option>
+          </select>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Register for Extended Warranty</h1>
-    <a href="https://tally.so/r/31yQL1" target="_blank" rel="noopener">
-      <button type="button">Register via Secure Form</button>
-    </a>
+    <section id="register">
+      <h2>BeneSupport Warranty Registration</h2>
+      <a href="https://tally.so/r/31yQL1" target="_blank" style="padding: 12px 24px; background: #000; color: #fff; text-decoration: none; border-radius: 4px; font-weight: bold;">
+        Register Now
+      </a>
+    </section>
   </main>
-  
-<script>
-  document.getElementById('language-selector').addEventListener('change', function(e) {
-    const lang = e.target.value;
-    const path = window.location.pathname;
-    const isGerman = path.startsWith('/de/');
-    const corePath = isGerman ? path.replace(/^\/de\//, '') : path.replace(/^\//, '');
-    const newPath = lang === 'de' ? '/de/' + corePath : '/' + corePath;
-    window.location.href = newPath;
-  });
-</script>
 
+  <footer>
+    <p>&copy; 2025 BeneSupport. All rights reserved.</p>
+    <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms</a>
+  </footer>
+
+  <script>
+    document.getElementById('language-selector').addEventListener('change', function(e) {
+      const lang = e.target.value;
+      if (lang === 'de') window.location.href = '/de/register.html';
+      else window.location.href = '/register.html';
+    });
+  </script>
 </body>
 </html>
