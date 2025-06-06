@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Thank You – BeneSupport</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" type="image/x-icon" href="/favicon-green.ico">
+  <link href="/favicon.ico" rel="icon"/>
+  <link href="/style.css" rel="stylesheet"/>
+  <style>
+    body { margin: 0; }
+    header { background-color: #003366; padding: 1em; color: white; }
+    header h1 { margin: 0; }
+    nav ul {
+      list-style: none; margin: 0; padding: 0;
+      display: flex; gap: 1em; align-items: center;
+    }
+    nav ul li a, nav ul li select {
+      color: white; text-decoration: none; font-weight: bold;
+    }
+    #hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      margin-bottom: -5px;
+    }
+    #hero .overlay {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0,0,0,0.6);
+      padding: 1.5em 2em;
+      border-radius: 8px;
+      width: 85%;
+      max-width: 960px;
+      color: white;
+      font-size: 1.6em;
+      font-style: italic;
+      line-height: 1.4;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register – BeneSupport</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <header>
@@ -13,19 +56,20 @@
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/products">Products</a></li>
+        <li><a href="/products">Best Seller</a></li>
         <li><a href="/register">Warranty</a></li>
-        <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
         <li>
-<select id="language-selector">
-  <option value="en">EN</option>
-  <option value="de">DE</option>
-</select>
-</li>
+          <select id="language-selector">
+            <option value="en" selected>EN</option>
+            <option value="de">DE</option>
+          </select>
+        </li>
       </ul>
     </nav>
-  </header>
+  </header> 
+
+
 
   <main>
     <h1>Thank you for registering!</h1>
