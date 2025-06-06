@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Datenschutzrichtlinie – BeneSupport</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>BeneSupport</h1>
+    <nav>
+      <ul>
+        <li><a href="/de/">Startseite</a></li>
+        <li><a href="/products">Produkte</a></li>
+        <li><a href="/de/register">Garantie</a></li>
+        <li><a href="/about">Über Uns</a></li>
+        <li><a href="/contact">Kontakt</a></li>
+        <li>
+          <select id="language-selector">
+            <option value="en">EN</option>
+            <option value="de" selected>DE</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Datenschutzrichtlinie</h2>
+    <p><strong>Datenverantwortlicher:</strong> BeneSupport<br>
+    E-Mail: <a href="mailto:compliance@benesupport.com">compliance@benesupport.com</a></p>
+
+    <p>Diese Datenschutzrichtlinie erklärt, wie BeneSupport („wir“) Ihre persönlichen Daten gemäß der Datenschutz-Grundverordnung (DSGVO) sammelt, verwendet und schützt.</p>
+
+    <h3>1. Welche Daten wir sammeln</h3>
+    <ul>
+      <li>Name, E-Mail, Land</li>
+      <li>Bestellnummer, Produkttyp, Kaufdatum, Kanal</li>
+      <li>Optionales Feedback</li>
+    </ul>
+
+    <h3>2. Rechtsgrundlage</h3>
+    <p>Ihre Daten werden auf Grundlage Ihrer ausdrücklichen Zustimmung und unseres berechtigten Interesses zur Bereitstellung von Garantie- und Supportleistungen verarbeitet.</p>
+
+    <h3>3. Verwendungszwecke</h3>
+    <ul>
+      <li>Zur Registrierung und Verwaltung Ihrer Garantie</li>
+      <li>Zur Identitätsprüfung im Kundensupport</li>
+      <li>Zur Verbesserung unserer Produkte und Services</li>
+    </ul>
+
+    <h3>4. Speicherfrist</h3>
+    <p>Wir speichern Ihre Daten sicher für bis zu 5 Jahre oder soweit gesetzlich erforderlich.</p>
+
+    <h3>5. Datenübertragung</h3>
+    <p>Einige Daten können durch Drittanbieter (z.B. Tally) verarbeitet werden und außerhalb der EU gespeichert sein – unter Einhaltung der DSGVO.</p>
+
+    <h3>6. Ihre Rechte</h3>
+    <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit und Beschwerde bei einer Datenschutzbehörde.</p>
+
+    <p>Zur Ausübung Ihrer Rechte kontaktieren Sie uns bitte: <a href="mailto:compliance@benesupport.com">compliance@benesupport.com</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BeneSupport. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script>
+    document.getElementById("language-selector").addEventListener("change", function(e) {
+      const lang = e.target.value;
+      window.location.href = lang === "en" ? "/privacy.html" : "/de/privacy.html";
+    });
+  </script>
+</body>
+</html>
