@@ -1,45 +1,43 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Willkommen bei BeneSupport</title>
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Willkommen bei BeneSupport</title>
+<link href="/favicon.ico" rel="icon"/>
+<link href="/style.css" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-    <h1>BeneSupport</h1>
-    <nav>
-      <ul>
-        <li><a href="/de/">Startseite</a></li>
-        <li><a href="/products">Produkte</a></li>
-        <li><a href="/de/register">Garantie</a></li>
-        <li><a href="/about">Über Uns</a></li>
-        <li><a href="/contact">Kontakt</a></li>
-        <li>
-          <select id="language-selector">
-            <option value="en">EN</option>
-            <option value="de" selected>DE</option>
-          </select>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>Bewegung mit Vertrauen stärken</h2>
-      <p>Unterstützung. Fürsorge. Komfort – für die Menschen, die wir lieben.</p>
-      <a href="/de/register"><button>Garantie registrieren</button></a>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 BeneSupport. Alle Rechte vorbehalten.</p>
-  </footer>
-
-  <script>
+<header>
+<h1>BeneSupport</h1>
+<nav>
+<ul>
+<li><a href="/de/">Startseite</a></li>
+<li><a href="/products">Produkte</a></li>
+<li><a href="/de/register">Garantie</a></li>
+<li><a href="/about">Über Uns</a></li>
+<li><a href="/contact">Kontakt</a></li>
+<li>
+<select id="language-selector">
+<option value="en">EN</option>
+<option selected="" value="de">DE</option>
+</select>
+</li>
+</ul>
+</nav>
+</header>
+<main>
+<section>
+<h2>Bewegung mit Vertrauen stärken</h2>
+<p>Unterstützung. Fürsorge. Komfort – für die Menschen, die wir lieben.</p>
+<a href="/de/register"><button style="background-color:#005c9e;color:#fff;padding:10px 20px;border:none;border-radius:6px;cursor:pointer;font-weight:bold;">Garantie registrieren</button></a>
+</section>
+</main>
+<footer>
+<p>© 2025 BeneSupport. Alle Rechte vorbehalten.</p>
+ | <a href="/de/privacy">Datenschutz</a></footer>
+<script>
     document.getElementById('language-selector').addEventListener('change', function(e) {
       const lang = e.target.value;
       window.location.href = lang === 'en' ? '/' : '/de/';
