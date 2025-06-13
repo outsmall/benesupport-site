@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,14 +42,7 @@
     }
   </style>
 </head>
-<body>
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Register – BeneSupport</title>
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/style.css" />
-</head>
+
 <body>
   <header>
     <h1>BeneSupport</h1>
@@ -68,45 +60,43 @@
         </li>
       </ul>
     </nav>
-  </header> 
+  </header>
 
+  <main>
+    <section id="register" style="padding: 3em 1em; text-align: left; max-width: 680px; margin: auto;">
+      <h2>BeneSupport Warranty Registration</h2>
 
+      <p style="margin-top: 1em; font-size: 1.05em;">
+        Thank you for choosing BeneSupport.
+      </p>
+      <p style="margin-top: 1em; font-size: 1.05em;">
+        By completing the form below, you can extend your product warranty by an
+        <strong>additional 1 year</strong> on top of the standard warranty period.
+      </p>
 
- <main>
-  <section id="register" style="padding: 3em 1em; text-align: left; max-width: 680px; margin: auto;">
-    <h2>BeneSupport Warranty Registration</h2>
+      <a href="https://tally.so/r/31yQL1"
+         target="_blank"
+         style="display: inline-block; margin: 2em 0 1em 0; padding: 12px 24px; background: #000; color: #fff; text-decoration: none; border-radius: 4px; font-weight: bold;">
+        Register Now
+      </a>
 
-    <p style="margin-top: 1em; font-size: 1.05em;">
-      Thank you for choosing BeneSupport.
-    </p>
-    <p style="margin-top: 1em; font-size: 1.05em;">
-      By completing the form below, you can extend your product warranty by an
-      <strong>additional 1 year</strong> on top of the standard warranty period.
-    </p>
+      <p style="margin-top: 1.5em; font-size: 0.9em; color: #555; line-height: 1.6;">
+        By submitting your registration, you agree to our
+        <a href="/privacy" style="color: #005c9e; text-decoration: underline;">Privacy Policy</a>
+        and our
+        <a href="/warranty-terms.html" style="color: #005c9e; text-decoration: underline;">Warranty Terms</a>.
+      </p>
+    </section>
+  </main>
 
-    <a href="https://tally.so/r/31yQL1"
-       target="_blank"
-       style="display: inline-block; margin: 2em 0 1em 0; padding: 12px 24px; background: #000; color: #fff; text-decoration: none; border-radius: 4px; font-weight: bold;">
-      Register Now
-    </a>
-
-    <p style="margin-top: 1.5em; font-size: 0.9em; color: #555; line-height: 1.6;">
-      By submitting your registration, you agree to our
-      <a href="/privacy" style="color: #005c9e; text-decoration: underline;">Privacy Policy</a>
-      and our
-      <a href="/warranty-terms.html" style="color: #005c9e; text-decoration: underline;">Warranty Terms</a>.
-    </p>
-  </section>
-</main>
-
- <footer style="text-align: center;">
-  <p>© BeneSupport. All rights reserved. | <a href="/privacy">Privacy Policy</a></p>
-</footer>
+  <footer style="text-align: center; background-color: #003366; color: white; padding: 1em;">
+    <p>© BeneSupport. All rights reserved. | <a href="/privacy" style="color: #fff; text-decoration: underline;">Privacy Policy</a></p>
+  </footer>
 
   <script>
     document.getElementById('language-selector').addEventListener('change', function(e) {
       const lang = e.target.value;
-      window.location.href = lang === 'de' ? '/de/' : '/';
+      window.location.href = lang === 'de' ? '/de/register.html' : '/register.html';
     });
   </script>
 </body>
