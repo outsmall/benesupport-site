@@ -110,8 +110,8 @@ blockquote {
 @media (max-width: 768px) {
   #hero .overlay {
     bottom: 24%; /* 比原来的 12% 稍微下移一点，避免挡住人物脸部 */
-    font-size: 0.3em;
-    width: 92%;
+    font-size: 0.5em;
+    width: 90%;
     padding: 1em 1em;
   }
 }
