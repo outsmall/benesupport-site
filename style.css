@@ -106,3 +106,46 @@ blockquote {
     text-align: center;
   }
 }
+
+/* ------------------------
+   优化：导航栏不被遮挡
+------------------------- */
+header {
+  background-color: #003366;
+  padding: 1em;
+  color: white;
+  position: relative;
+  z-index: 10; /* 防止被 hero overlay 遮挡 */
+}
+
+/* ------------------------
+   优化：首页 Hero Overlay 文本样式
+------------------------- */
+#hero .overlay {
+  bottom: 8%;
+  padding: 1.2em 1em;
+  font-size: 1.2em;
+  width: 90%;
+}
+@media (max-width: 768px) {
+  #hero .overlay {
+    font-size: 1em;
+    bottom: 12%;
+    width: 95%;
+  }
+}
+
+/* ------------------------
+   优化：Main Section 文字宽度与边距
+------------------------- */
+main section {
+  padding: 2em 1.5em;
+  max-width: 720px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  main section {
+    padding: 1.5em 1em;
+    max-width: 95%;
+  }
+}
