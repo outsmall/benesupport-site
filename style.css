@@ -120,7 +120,7 @@ blockquote {
 @media (max-width: 768px) {
   main section {
     padding: 1.2em 0.5em;
-    max-width: 99%;
+    max-width: 100%;
     line-height: 1.6;
   }
 }
