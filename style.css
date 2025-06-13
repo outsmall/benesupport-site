@@ -61,3 +61,48 @@ footer a {
 blockquote {
   margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1em;
+    padding: 1em;
+  }
+
+  header, footer {
+    padding: 1em;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8em;
+    align-items: flex-start;
+  }
+
+  #register,
+  #contact,
+  #brand-story {
+    padding: 2em 1em;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+  }
+
+  p, a {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  .overlay {
+    font-size: 1em;
+    padding: 1em;
+  }
+
+  a.button, button, .cta {
+    width: 100%;
+    text-align: center;
+  }
+}
