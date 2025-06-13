@@ -1,115 +1,7 @@
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #003366;
-  color: white;
-  padding: 1em 2em 0.5em 2em;
-}
-
-header h1 {
-  margin: 0 0 14px 0; /* 增加与导航之间的间距 */
-  font-size: 2em;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  gap: 1.5em;
-  margin: 0;
-}
-
-nav li {
-  display: inline;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-select#language-selector {
-  padding: 0.2em;
-  font-size: 1em;
-  color: black;
-}
-
-main {
-  padding: 2em;
-  background-color: #f9f9f9;
-}
-
-footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  font-size: 0.9em;
-}
-
-footer a {
-  color: white;
-  text-decoration: underline;
-}
-
-blockquote {
-  margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 1em;
-    padding: 1em;
-  }
-
-  header, footer {
-    padding: 1em;
-    text-align: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.8em;
-    align-items: flex-start;
-  }
-
-  #register,
-  #contact,
-  #brand-story {
-    padding: 2em 1em;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  h1, h2 {
-    font-size: 1.5em;
-  }
-
-  p, a {
-    font-size: 1em;
-    line-height: 1.5em;
-  }
-
-  .overlay {
-    font-size: 1em;
-    padding: 1em;
-  }
-
-  a.button, button, .cta {
-    width: 100%;
-    text-align: center;
-  }
-}
 /* ---------- 移动端优化：Hero overlay 避免遮挡过多 ---------- */
 @media (max-width: 768px) {
   #hero .overlay {
-    bottom: 24%; /* 比原来的 12% 稍微下移一点，避免挡住人物脸部 */
+    bottom: 24%;  /* 避免挡住人物脸部 */
     font-size: 0.5em;
     width: 90%;
     padding: 1em 1em;
@@ -128,14 +20,16 @@ blockquote {
 /* ---------- 移动端优化：导航栏左对齐 ---------- */
 @media (max-width: 768px) {
   nav ul {
-    justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
     gap: 0.8em;
   }
+
   nav ul li {
     width: 100%;
   }
+
   nav ul li select {
     margin-top: 0.5em;
   }
