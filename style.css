@@ -34,3 +34,24 @@
     margin-top: 0.5em;
   }
 }
+
+/* 修复语言选择框在移动端不显示文字的问题 */
+select#language-selector {
+  padding: 0.4em 1em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #003366;            /* 深蓝字色 */
+  background-color: #ffffff; /* 白色背景 */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;          /* 去除系统默认样式（部分生效） */
+}
+
+/* 增加移动端的兼容样式 */
+@media (max-width: 768px) {
+  select#language-selector {
+    width: 100px;
+    max-width: 100%;
+  }
+}
+
