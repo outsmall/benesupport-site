@@ -109,9 +109,9 @@ blockquote {
 /* ---------- 移动端优化：Hero overlay 避免遮挡过多 ---------- */
 @media (max-width: 768px) {
   #hero .overlay {
-    bottom: 18%; /* 比原来的 12% 稍微下移一点，避免挡住人物脸部 */
-    font-size: 1em;
-    width: 94%;
+    bottom: 24%; /* 比原来的 12% 稍微下移一点，避免挡住人物脸部 */
+    font-size: 0.3em;
+    width: 92%;
     padding: 1em 1em;
   }
 }
