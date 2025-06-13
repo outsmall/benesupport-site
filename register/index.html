@@ -103,18 +103,16 @@
   <br>
   <br>
   <br>
- <br>
-  <br>
 
-  
-  <footer style="text-align: center; background-color: #003366; color: white; padding: 1em;">
+
+   <footer style="text-align: center; background-color: #003366; color: white; padding: 1em;">
     <p>© BeneSupport. All rights reserved. | <a href="/privacy" style="color: #fff; text-decoration: underline;">Privacy Policy</a></p>
   </footer>
-
   <script>
     document.getElementById('language-selector').addEventListener('change', function(e) {
       const lang = e.target.value;
-      window.location.href = lang === 'de' ? '/de/' : '/';
+      if (lang === 'de') window.location.href = '/de/contact.html';
+      else window.location.href = '/contact/index.html';
     });
   </script>
 </body>
