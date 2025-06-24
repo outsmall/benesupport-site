@@ -1,52 +1,55 @@
 <!DOCTYPE html>
-
 <html lang="de">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Willkommen bei BeneSupport</title>
-<link href="/favicon.ico" rel="icon"/>
-<link href="/style.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <title>Bene Support® – Für Bewegung gemacht</title>
+  <!-- 页面头部引用、样式、favicon、菜单保持与英文版一致 -->
 </head>
-<body style="background: url('index background.png') no-repeat center center; background-size: cover;">
-<header>
-<h1>BeneSupport</h1>
-<nav>
-<ul>
-<li><a href="/de/">Startseite</a></li>
-<li><a href="/products">Produkte</a></li>
-<li><a href="/de/register">Garantie</a></li>
-<li></li>
-<li><a href="/contact">Kontakt</a></li>
-<li>
-<select id="language-selector">
-<option value="en">EN</option>
-<option selected="" value="de">DE</option>
-</select>
-</li>
-</ul>
-</nav>
-</header>
-<main>
-<section>
-<h2>Bewegung mit Vertrauen stärken</h2>
-<p>Unterstützung. Fürsorge. Komfort – für die Menschen, die wir lieben.</p>
-<a href="/de/register"><button style="background-color:#005c9e;color:#fff;padding:10px 20px;border:none;border-radius:6px;cursor:pointer;font-weight:bold;">Garantie registrieren</button></a>
-</section>
+<body>
+  <!-- 头部/导航栏（结构与英文版一致） -->
 
-<section id="brand-story">
-<h2>Über BeneSupport</h2>
-<p>BeneSupport unterstützt Menschen dabei, sich im Alltag sicher zu bewegen. Wir entwickeln orthopädische Bandagen für Komfort, Schutz und Vertrauen bei jeder Bewegung – ob in der Erholung oder zur aktiven Unterstützung.</p>
-</section>
-</main>
-<footer>
-<p>© 2025 BeneSupport. Alle Rechte vorbehalten.</p>
- | <a href="/de/privacy">Datenschutz</a></footer>
-<script>
-    document.getElementById('language-selector').addEventListener('change', function(e) {
-      const lang = e.target.value;
-      window.location.href = lang === 'en' ? '/' : '/de/';
-    });
-  </script>
+  <header>
+    <nav>
+      <a href="/de/index.html">Startseite</a>
+      <a href="/de/register.html">Registrierung</a>
+      <a href="/de/warranty.html">Garantie</a>
+      <a href="/de/privacy.html">Datenschutz</a>
+      <!-- 语言切换菜单 -->
+      <select onchange="location = this.value;">
+        <option value="/en/index.html">English</option>
+        <option value="/de/index.html" selected>Deutsch</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Bene Support® – Für Bewegung gemacht</h1>
+    <p>Stärkende Unterstützung für Ihren aktiven Alltag.<br>
+    Erleben Sie Komfort, Schutz und Innovation mit unseren orthopädischen Bandagen und Stützprodukten.</p>
+    <section>
+      <h2>Unsere Produktlinien</h2>
+      <ul>
+        <li><strong>Daily Support</strong> – Für den Alltag</li>
+        <li><strong>Relief Support</strong> – Für gezielte Entlastung</li>
+        <li><strong>Pro Support</strong> – Für intensive Beanspruchung</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Warum Bene Support?</h2>
+      <ul>
+        <li>OEKO-TEX®-zertifizierte Materialien</li>
+        <li>Dreifacher Anti-Rutsch-Silikon</li>
+        <li>Entwickelt für Sport, Schmerzlinderung und Erholung</li>
+      </ul>
+      <a href="/de/register.html">Jetzt registrieren &rarr;</a>
+    </section>
+  </main>
+
+  <!-- 页脚（结构与英文一致） -->
+  <footer>
+    <p>&copy; 2025 Bene Support®. Alle Rechte vorbehalten.</p>
+    <a href="/de/privacy.html">Datenschutzerklärung</a> |
+    <a href="/de/warranty.html">Garantiebedingungen</a>
+  </footer>
 </body>
 </html>
