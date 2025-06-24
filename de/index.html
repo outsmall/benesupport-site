@@ -1,55 +1,114 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Bene Support® – Für Bewegung gemacht</title>
-  <!-- 页面头部引用、样式、favicon、菜单保持与英文版一致 -->
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Willkommen bei BeneSupport</title>
+  <link href="/favicon.ico" rel="icon"/>
+  <link href="/style.css" rel="stylesheet"/>
+  <style>
+    body { margin: 0; }
+    header { background-color: #003366; padding: 1em; color: white; }
+    header h1 { margin: 0; }
+    nav ul {
+      list-style: none; margin: 0; padding: 0;
+      display: flex; gap: 1em; align-items: center;
+    }
+    nav ul li a, nav ul li select {
+      color: white; text-decoration: none; font-weight: bold;
+    }
+    #hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      margin-bottom: -5px;
+    }
+    #hero .overlay {
+    position: absolute;
+    bottom: 260px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.6);
+    padding: 1.5em 2em;
+    border-radius: 8px;
+    width: 85%;
+    max-width: 960px;
+    color: white;
+    font-size: 1.6em;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+  }
+  </style>
 </head>
 <body>
-  <!-- 头部/导航栏（结构与英文版一致） -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Registrieren – BeneSupport</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>BeneSupport</h1>
+      <nav>
+        <ul>
+          <li><a href="/de/">Startseite</a></li>
+          <li><a href="/de/products">Bestseller</a></li>
+          <li><a href="/de/register">Garantie</a></li>
+          <li><a href="/de/contact">Kontakt</a></li>
+          <li>
+            <select id="language-selector">
+              <option value="en">EN</option>
+              <option value="de" selected>DE</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </header> 
 
-  <header>
-    <nav>
-      <a href="/de/index.html">Startseite</a>
-      <a href="/de/register.html">Registrierung</a>
-      <a href="/de/warranty.html">Garantie</a>
-      <a href="/de/privacy.html">Datenschutz</a>
-      <!-- 语言切换菜单 -->
-      <select onchange="location = this.value;">
-        <option value="/en/index.html">English</option>
-        <option value="/de/index.html" selected>Deutsch</option>
-      </select>
-    </nav>
-  </header>
+    <main style="margin:0">
+      <section id="hero" style="position: relative; margin-top: 0;">
+        <img src="index background.png" alt="Hero Hintergrund">
+        <div class="overlay">
+          „BeneSupport ist nicht nur ein Produkt. Es ist ein Versprechen – an die Menschen, die wir lieben, an das Leben, das wir führen, und an die Zukunft, die wir gestalten.“
+        </div>
+      </section>
 
-  <main>
-    <h1>Bene Support® – Für Bewegung gemacht</h1>
-    <p>Stärkende Unterstützung für Ihren aktiven Alltag.<br>
-    Erleben Sie Komfort, Schutz und Innovation mit unseren orthopädischen Bandagen und Stützprodukten.</p>
-    <section>
-      <h2>Unsere Produktlinien</h2>
-      <ul>
-        <li><strong>Daily Support</strong> – Für den Alltag</li>
-        <li><strong>Relief Support</strong> – Für gezielte Entlastung</li>
-        <li><strong>Pro Support</strong> – Für intensive Beanspruchung</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Warum Bene Support?</h2>
-      <ul>
-        <li>OEKO-TEX®-zertifizierte Materialien</li>
-        <li>Dreifacher Anti-Rutsch-Silikon</li>
-        <li>Entwickelt für Sport, Schmerzlinderung und Erholung</li>
-      </ul>
-      <a href="/de/register.html">Jetzt registrieren &rarr;</a>
-    </section>
-  </main>
+      <p style="text-align: center; font-size: 0.6em; color: #777; margin-top: 1em;">
+        Ein Moment des Glücks, wie ich ihn mir vorstelle – zum Leben erweckt mit KI.
+      </p>
 
-  <!-- 页脚（结构与英文一致） -->
-  <footer>
-    <p>&copy; 2025 Bene Support®. Alle Rechte vorbehalten.</p>
-    <a href="/de/privacy.html">Datenschutzerklärung</a> |
-    <a href="/de/warranty.html">Garantiebedingungen</a>
-  </footer>
+      <section id="brand-story" style="background-color: #fff; padding: 3em;">
+        <h2 style="text-align:center;">Markengeschichte von BeneSupport</h2>
+
+        <p><strong>Ich liebe meine Mutter und meinen Vater.</strong></p>
+
+        <p>Wenn ich sehe, wie meine Eltern älter werden, spüre ich einen leisen Schmerz im Herzen, wenn ich ihre kleinen Veränderungen bemerke – langsamere Schritte, gelegentliche Beschwerden, Momente leiser Erschöpfung. Mir wurde klar, wie sehr unser Körper uns trägt und wie sehr wir es verdienen, jeden Tag unterstützt zu werden – wirklich jeden Tag.</p>
+
+        <p>Deshalb habe ich BeneSupport gegründet – um alltägliche Bewegung durch moderne Materialien und durchdachtes Design zu stärken – mit mehr Halt, dauerhaftem Komfort und vertrauensvollem Schutz.</p>
+
+        <p>Nach vielen Jahren in Mailand habe ich oft das Sforza-Schlossmuseum besucht. Die antiken Schilde der Ritter dort inspirierten mich, moderne Schilde für den Körper zu schaffen – unterstützende Produkte, die Schutz, Komfort und Fürsorge bringen.</p>
+
+        <p><strong>Ob für Ihre Eltern, Ihre Freunde oder für Sie selbst – wir sind da, um genau dort sanfte Unterstützung und Trost zu geben, wo sie am meisten gebraucht werden.</strong></p>
+
+        <p>Unser Bestseller-Produkt wird in Mailand, Italien, entworfen – und steht für unser gesamtes Engagement für durchdachtes Design, bewährten Komfort und herzliche Fürsorge.</p>
+
+      </section>
+    </main>
+
+    <footer style="text-align: center;">
+      <p>© BeneSupport. Alle Rechte vorbehalten. | <a href="/de/privacy">Datenschutzerklärung</a></p>
+    </footer>
+
+    <script>
+      document.getElementById('language-selector').addEventListener('change', function(e) {
+        const lang = e.target.value;
+        window.location.href = lang === 'de' ? '/de/' : '/';
+      });
+    </script>
+  </body>
 </body>
 </html>
