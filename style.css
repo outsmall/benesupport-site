@@ -83,3 +83,17 @@ select#language-selector {
   }
 }
 
+.ai-caption {
+  text-align: center;
+  font-size: 0.6em;
+  color: #777;
+  margin-top: 1em;
+}
+
+/* 手机端优化间距 */
+@media (max-width: 768px) {
+  .ai-caption {
+    margin-top: 0.3em;  /* ✅ 拉近距离，原来是1em */
+  }
+}
+
