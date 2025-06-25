@@ -138,9 +138,12 @@ select#language-selector {
     box-sizing: border-box;
   }
 
+
   .ai-caption {
     font-size: 0.5em;
-    margin-top: -1.2em;
+    margin-top: 0.8em;
+    padding: 0 1em;
+    line-height: 1.4;
   }
 
   .brand-story {
