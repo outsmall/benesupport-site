@@ -8,13 +8,15 @@ header {
   background-color: #003366;
   padding: 1em;
   color: white;
-  position: relative;
-  z-index: 3;
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
+  font-size: 1.8em;
+  color: white;
 }
+
 
 nav ul {
   list-style: none;
