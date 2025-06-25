@@ -55,3 +55,31 @@ select#language-selector {
   }
 }
 
+ /* 增加品牌故事样式 */
+.brand-story {
+  background-color: #fff;
+  padding: 3em 1.5em;
+  font-size: 1.125em;     /* 约18px，适中阅读字号 */
+  line-height: 1.8;
+  max-width: 960px;
+  margin: auto;
+  font-family: "Helvetica Neue", system-ui, sans-serif;
+}
+.brand-story h2 {
+  text-align: center;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+}
+.brand-story p {
+  margin-bottom: 1.2em;
+}
+@media (max-width: 768px) {
+  .brand-story {
+    padding: 2em 1em;
+    font-size: 1em;       /* 移动端适配 */
+  }
+  .brand-story h2 {
+    font-size: 1.3em;
+  }
+}
+
