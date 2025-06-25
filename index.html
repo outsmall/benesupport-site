@@ -42,7 +42,8 @@
   background-color: rgba(0,0,0,0.6);
   padding: 1em 2em;
   border-radius: 8px;
-  width: 100%;
+  width: auto;             /* 用 auto 让它不占满整行 */
+  max-width: 700px;        /* 控制文字自动换行，建议 600~700 试试 */
   max-width: 960px;
   color: white;
   font-size: 2.2em;
@@ -51,24 +52,26 @@
   text-align: center;
   z-index: 2;
 }
-@media (max-width: 1066px) {
+@media (max-width: 768px) {
   #hero {
     position: relative;
-    overflow: hidden; /* 限制超出区域 */
+    overflow: hidden;
   }
 
   #hero .overlay {
+    position: absolute;
     bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 1em;
     padding: 1em;
 
-    width: 100%;
-    max-width: 100%; /* 保证不会超出父元素 */
-    box-sizing: border-box; /* 内边距不额外撑宽 */
-    left: 0;
-    transform: none; /* 不再需要居中位移 */
+    width: 90%;         /* 阴影不要占满屏 */
+    max-width: 90%;     /* 限制最大宽度 */
+    box-sizing: border-box;
   }
 }
+
 
 
   </style>
