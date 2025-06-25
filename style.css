@@ -66,9 +66,10 @@ select#language-selector {
   font-family: "Helvetica Neue", system-ui, sans-serif;
 }
 .brand-story h2 {
-  text-align: center;
+  margin-top: 0.2em;  
   font-size: 1.6em;
   margin-bottom: 1em;
+  text-align: center;
 }
 .brand-story p {
   margin-bottom: 1.2em;
@@ -78,9 +79,11 @@ select#language-selector {
     padding: 2em 1em;
     font-size: 1em;       /* 移动端适配 */
   }
-  .brand-story h2 {
-    font-size: 1.3em;
-  }
+.brand-story h2 {
+  margin-top: 0.2em;      
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  text-align: center;
 }
 
 .ai-caption {
