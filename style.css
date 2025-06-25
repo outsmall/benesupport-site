@@ -89,13 +89,15 @@ select#language-selector {
 .ai-caption {
   text-align: center;
   color: #777;
-  margin-top: 0.5em;
-  font-size: 1em; /* 默认给桌面端 */
+  margin-top: 0.2em;
+  font-size: 0.8em; /* 默认给桌面端 */
 }
 
 /* 📱 手机端优化 */
 @media (max-width: 768px) {
   .ai-caption {
+   text-align: center;
+   color: #777;
     font-size: 0.5em;  /* 手机稍微小一点 */
     margin-top: -1.2em; /* 贴近图片 */
   }
