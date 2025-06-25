@@ -40,7 +40,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0,0,0,0.6);
-  padding: 2em 3em;
+  padding: 1em 2em;
   border-radius: 8px;
   width: 100%;
   max-width: 960px;
@@ -51,13 +51,25 @@
   text-align: center;
   z-index: 2;
 }
-@media (max-width: 768px) {
+@media (max-width: 1066px) {
+  #hero {
+    position: relative;
+    overflow: hidden; /* 限制超出区域 */
+  }
+
   #hero .overlay {
     bottom: 10px;
     font-size: 1em;
     padding: 1em;
+
+    width: 100%;
+    max-width: 100%; /* 保证不会超出父元素 */
+    box-sizing: border-box; /* 内边距不额外撑宽 */
+    left: 0;
+    transform: none; /* 不再需要居中位移 */
   }
 }
+
 
   </style>
 </head>
