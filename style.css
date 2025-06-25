@@ -1,23 +1,110 @@
-/* ---------- 移动端优化：Hero overlay 避免遮挡过多 ---------- */
-@media (max-width: 768px) {
-  #hero .overlay {
-    bottom: 24%;  /* 避免挡住人物脸部 */
-    font-size: 0.5em;
-    width: 90%;
-    padding: 1em 1em;
-  }
+/* ---------- 通用基础样式 ---------- */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", system-ui, sans-serif;
 }
 
-/* ---------- 移动端优化：正文文字宽度和边距 ---------- */
-@media (max-width: 768px) {
-  main section {
-    padding: 1.2em 0.5em;
-    max-width: 100%;
-    line-height: 1.6;
-  }
+header {
+  background-color: #003366;
+  padding: 1em;
+  color: white;
+  position: relative;
+  z-index: 3;
 }
 
-/* ---------- 移动端优化：导航栏左对齐 ---------- */
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+nav ul li a,
+nav ul li select {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- Hero 区域 ---------- */
+#hero {
+  position: relative;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin-bottom: -5px;
+}
+
+#hero .overlay {
+  position: absolute;
+  bottom: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1em 2em;
+  border-radius: 8px;
+  width: 75%;
+  max-width: 700px;
+  color: white;
+  font-size: 2.2em;
+  font-style: italic;
+  line-height: 1.4;
+  text-align: center;
+  z-index: 2;
+}
+
+/* ---------- AI Caption 样式 ---------- */
+.ai-caption {
+  text-align: center;
+  color: #777;
+  margin-top: 0.2em;
+  font-size: 0.8em;
+}
+
+/* ---------- 品牌故事正文 ---------- */
+.brand-story {
+  background-color: #fff;
+  padding: 3em 1.5em;
+  font-size: 1.125em;
+  line-height: 1.8;
+  max-width: 960px;
+  margin: auto;
+}
+
+.brand-story h2 {
+  margin-top: 0.2em;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.brand-story p {
+  margin-bottom: 1.2em;
+}
+
+/* ---------- 语言选择器样式 ---------- */
+select#language-selector {
+  padding: 0.4em 1em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #003366;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+}
+
+/* ---------- 移动端优化 ---------- */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -33,74 +120,40 @@
   nav ul li select {
     margin-top: 0.5em;
   }
-}
 
-/* 修复语言选择框在移动端不显示文字的问题 */
-select#language-selector {
-  padding: 0.4em 1em;
-  font-size: 1em;
-  font-weight: bold;
-  color: #003366;            /* 深蓝字色 */
-  background-color: #ffffff; /* 白色背景 */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  appearance: none;          /* 去除系统默认样式（部分生效） */
-}
-
-/* 增加移动端的兼容样式 */
-@media (max-width: 768px) {
   select#language-selector {
     width: 100px;
     max-width: 100%;
   }
-}
 
-/* 增加品牌故事样式 */
-.brand-story {
-  background-color: #fff;
-  padding: 3em 1.5em;
-  font-size: 1.125em;     /* 约18px，适中阅读字号 */
-  line-height: 1.8;
-  max-width: 960px;
-  margin: auto;
-  font-family: "Helvetica Neue", system-ui, sans-serif;
-}
-.brand-story h2 {
-  margin-top: -0.3em;  
-  font-size: 2em;
-  margin-bottom: 1.2em;
-  text-align: center;
-}
-.brand-story p {
-  margin-bottom: 1.3em;
-}
+  #hero .overlay {
+    bottom: 20px !important;
+    font-size: 0.9em !important;
+    padding: 0.8em !important;
+    width: 88% !important;
+    max-width: 88% !important;
+    box-sizing: border-box;
+  }
 
-/* 📱 手机端优化：品牌故事与 AI 文案 */
-@media (max-width: 768px) {
+  .ai-caption {
+    font-size: 0.5em;
+    margin-top: -1.2em;
+  }
+
   .brand-story {
     padding: 2em 1em;
     font-size: 1em;
   }
 
   .brand-story h2 {
-    margin-top: 0.2em;
     font-size: 1.3em;
-    margin-bottom: 1em;
-    text-align: center;
-  }
-
-  .ai-caption {
-    text-align: center;
-    color: #777;
-    font-size: 0.3em;
-    margin-top: -3em; /* 更贴近图片下沿 */
   }
 }
 
-/* 默认桌面端 AI 文案样式 */
-.ai-caption {
+/* ---------- 页脚 ---------- */
+footer {
   text-align: center;
-  color: #777;
-  margin-top: 0.5em;
-  font-size: 1em;
+  background-color: #003366;
+  color: white;
+  padding: 1em;
 }
