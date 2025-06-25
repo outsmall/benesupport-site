@@ -55,7 +55,7 @@ select#language-selector {
   }
 }
 
- /* 增加品牌故事样式 */
+/* 增加品牌故事样式 */
 .brand-story {
   background-color: #fff;
   padding: 3em 1.5em;
@@ -74,33 +74,33 @@ select#language-selector {
 .brand-story p {
   margin-bottom: 1.2em;
 }
+
+/* 📱 手机端优化：品牌故事与 AI 文案 */
 @media (max-width: 768px) {
   .brand-story {
     padding: 2em 1em;
-    font-size: 1em;       /* 移动端适配 */
-  }
-.brand-story h2 {
-  margin-top: 0.2em;      
-  font-size: 1.3em;
-  margin-bottom: 1em;
-  text-align: center;
-}
+    font-size: 1em;
   }
 
+  .brand-story h2 {
+    margin-top: 0.2em;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  .ai-caption {
+    text-align: center;
+    color: #777;
+    font-size: 0.5em;
+    margin-top: -1.2em; /* 更贴近图片下沿 */
+  }
+}
+
+/* 默认桌面端 AI 文案样式 */
 .ai-caption {
   text-align: center;
   color: #777;
   margin-top: 0.2em;
-  font-size: 0.8em; /* 默认给桌面端 */
+  font-size: 0.8em;
 }
-
-/* 📱 手机端优化 */
-@media (max-width: 768px) {
-  .ai-caption {
-   text-align: center;
-   color: #777;
-    font-size: 0.5em;  /* 手机稍微小一点 */
-    margin-top: -1.2em; /* 贴近图片 */
-  }
-}
-
