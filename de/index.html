@@ -8,15 +8,35 @@
   <link href="/style.css" rel="stylesheet"/>
   <style>
     body { margin: 0; }
-    header { background-color: #003366; padding: 1em; color: white; }
+    header {
+      background-color: #003366;
+      padding: 1em;
+      color: white;
+      position: relative;
+      z-index: 3;
+    }
+
     header h1 { margin: 0; }
+
     nav ul {
-      list-style: none; margin: 0; padding: 0;
-      display: flex; gap: 1em; align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1em;
+      align-items: center;
     }
+
     nav ul li a, nav ul li select {
-      color: white; text-decoration: none; font-weight: bold;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
+
+    #hero {
+      position: relative;
+    }
+
     #hero img {
       width: 100%;
       height: auto;
@@ -24,88 +44,108 @@
       object-fit: cover;
       margin-bottom: -5px;
     }
+
     #hero .overlay {
-    position: absolute;
-    bottom: 260px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0,0,0,0.6);
-    padding: 1.5em 2em;
-    border-radius: 8px;
-    width: 85%;
-    max-width: 960px;
-    color: white;
-    font-size: 1.6em;
-    font-style: italic;
-    line-height: 1.4;
-    text-align: center;
-  }
+      position: absolute;
+      bottom: 28%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0,0,0,0.6);
+      padding: 1em 2em;
+      border-radius: 8px;
+      width: 75%;
+      max-width: 960px;
+      color: white;
+      font-size: 2.2em;
+      font-style: italic;
+      line-height: 1.4;
+      text-align: center;
+      z-index: 2;
+    }
+
+    @media (max-width: 788px) {
+      #hero {
+        position: relative;
+        overflow: hidden;
+      }
+
+      #hero .overlay {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.9em;
+        padding: 0.8em;
+        width: 88%;
+        max-width: 88%;
+        box-sizing: border-box;
+      }
+    }
   </style>
 </head>
+
 <body>
-    <header>
-      <h1>BeneSupport</h1>
-      <nav>
-        <ul>
-          <li><a href="/de/">Startseite</a></li>
-          <li><a href="/de/products/">Bestseller</a></li>
-          <li><a href="/de/register/">Garantie</a></li>
-          <li><a href="/de/contact/">Kontakt</a></li>
-          <li>
-            <select id="language-selector">
-              <option value="en">EN</option>
-              <option value="de" selected>DE</option>
-            </select>
-          </li>
-        </ul>
-      </nav>
-    </header> 
+  <header>
+    <h1>BeneSupport</h1>
+    <nav>
+      <ul>
+        <li><a href="/de/">Startseite</a></li>
+        <li><a href="/de/products/">Bestseller</a></li>
+        <li><a href="/de/register/">Garantie</a></li>
+        <li><a href="/de/contact/">Kontakt</a></li>
+        <li>
+          <select id="language-selector">
+            <option value="en">EN</option>
+            <option value="de" selected>DE</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header> 
 
-    <main style="margin:0">
-      <section id="hero" style="position: relative; margin-top: 0;">
-        <img src="index background.png" alt="Hero Hintergrund">
-        <div class="overlay">
-          „BeneSupport ist nicht nur ein Produkt. Es ist ein Versprechen – an die Menschen, die wir lieben, an das Leben, das wir führen, und an die Zukunft, die wir gestalten.“
-        </div>
-      </section>
+  <main style="margin:0">
+    <section id="hero" style="position: relative; margin-top: 0;">
+      <img src="index background.png" alt="Hero Hintergrund">
+      <div class="overlay">
+        „BeneSupport ist nicht nur ein Produkt. Es ist ein Versprechen – an die Menschen, die wir lieben, an das Leben, das wir führen, und an die Zukunft, die wir gestalten.“
+      </div>
+    </section>
 
-      <p style="text-align: center; font-size: 0.6em; color: #777; margin-top: 1em;">
-        Ein Moment des Glücks, wie ich ihn mir vorstelle – zum Leben erweckt mit KI.
-      </p>
+    <p class="ai-caption">
+      Ein Moment des Glücks, wie ich ihn mir vorstelle – zum Leben erweckt mit KI.
+    </p>
 
-      <section id="brand-story" style="background-color: #fff; padding: 3em;">
-        <h2 style="text-align:center;">Markengeschichte von BeneSupport</h2>
+    <section id="brand-story" class="brand-story">
+      <h2>Markengeschichte von BeneSupport</h2>
 
-        <p><strong>Ich liebe meine Mutter und meinen Vater.</strong></p>
+      <p><strong>Ich liebe meine Mutter und meinen Vater.</strong></p>
 
-        <p>Wenn ich sehe, wie meine Eltern älter werden, spüre ich einen leisen Schmerz im Herzen, wenn ich ihre kleinen Veränderungen bemerke – langsamere Schritte, gelegentliche Beschwerden, Momente leiser Erschöpfung. Mir wurde klar, wie sehr unser Körper uns trägt und wie sehr wir es verdienen, jeden Tag unterstützt zu werden – wirklich jeden Tag.</p>
+      <p>Wenn ich sehe, wie meine Eltern älter werden, spüre ich einen leisen Schmerz im Herzen, wenn ich ihre kleinen Veränderungen bemerke – langsamere Schritte, gelegentliche Beschwerden, Momente leiser Erschöpfung. Mir wurde klar, wie sehr unser Körper uns trägt und wie sehr wir es verdienen, jeden Tag unterstützt zu werden – wirklich jeden Tag.</p>
 
-        <p>Deshalb habe ich BeneSupport gegründet – um alltägliche Bewegung durch moderne Materialien und durchdachtes Design zu stärken – mit mehr Halt, dauerhaftem Komfort und vertrauensvollem Schutz.</p>
+      <p>Deshalb habe ich BeneSupport gegründet – um alltägliche Bewegung durch moderne Materialien und durchdachtes Design zu stärken – mit mehr Halt, dauerhaftem Komfort und vertrauensvollem Schutz.</p>
 
-        <p>Nach vielen Jahren in Mailand habe ich oft das Sforza-Schlossmuseum besucht. Die antiken Schilde der Ritter dort inspirierten mich, moderne Schilde für den Körper zu schaffen – unterstützende Produkte, die Schutz, Komfort und Fürsorge bringen.</p>
+      <p>Nach vielen Jahren in Mailand habe ich oft das Sforza-Schlossmuseum besucht. Die antiken Schilde der Ritter dort inspirierten mich, moderne Schilde für den Körper zu schaffen – unterstützende Produkte, die Schutz, Komfort und Fürsorge bringen.</p>
 
-        <p><strong>Ob für Ihre Eltern, Ihre Freunde oder für Sie selbst – wir sind da, um genau dort sanfte Unterstützung und Trost zu geben, wo sie am meisten gebraucht werden.</strong></p>
+      <p><strong>Ob für Ihre Eltern, Ihre Freunde oder für Sie selbst – wir sind da, um genau dort sanfte Unterstützung und Trost zu geben, wo sie am meisten gebraucht werden.</strong></p>
 
-        <p>Unser Bestseller-Produkt wird in Mailand, Italien, entworfen – und steht für unser gesamtes Engagement für durchdachtes Design, bewährten Komfort und herzliche Fürsorge.</p>
+      <p>Unser Bestseller-Produkt wird in Mailand, Italien, entworfen – und steht für unser gesamtes Engagement für durchdachtes Design, bewährten Komfort und herzliche Fürsorge.</p>
+    </section>
+  </main>
 
-      </section>
-    </main>
+  <footer style="text-align: center; background-color: #003366; color: white; padding: 1em;">
+    <p>© BeneSupport. Alle Rechte vorbehalten. | 
+      <a href="/de/privacy" style="color: #fff; text-decoration: underline;" 
+         onclick="window.open(this.href, 'popupPrivacy', 'width=700,height=600'); return false;">
+        Datenschutzerklärung
+      </a>
+    </p>
+  </footer>
 
-<footer style="text-align: center; background-color: #003366; color: white; padding: 1em;">
-  <p>© BeneSupport. Alle Rechte vorbehalten. | 
-    <a href="/de/privacy" style="color: #fff; text-decoration: underline;" 
-       onclick="window.open(this.href, 'popupPrivacy', 'width=700,height=600'); return false;">
-      Datenschutzerklärung
-    </a>
-  </p>
-</footer>
-
-
-    <script>
-      document.getElementById('language-selector').addEventListener('change', function(e) {
-        const lang = e.target.value;
-        window.location.href = lang === 'de' ? '/de/' : '/';
-      });
-    </script>
+  <script>
+    document.getElementById('language-selector').addEventListener('change', function(e) {
+      const lang = e.target.value;
+      window.location.href = lang === 'de' ? '/de/' : '/';
+    });
+  </script>
 </body>
 </html>
