@@ -70,7 +70,7 @@ nav ul li select {
 .ai-caption {
   text-align: center;
   color: #777;
-  margin-top: 0.2em;
+  margin-top: 0.5em;
   font-size: 0.8em;
 }
 
@@ -109,6 +109,11 @@ select#language-selector {
 
 /* ---------- 移动端优化 ---------- */
 @media (max-width: 768px) {
+  nav {
+  text-align: left;
+  padding-left: 1em;
+}
+  
   nav ul {
     flex-direction: column;
     align-items: flex-start;
